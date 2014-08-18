@@ -1,6 +1,9 @@
 FROM debian:wheezy
 MAINTAINER Steeve Morin "steeve.morin@gmail.com"
 
+ENV KERNEL_VERSION  3.14.10
+ENV AUFS_BRANCH     aufs3.14
+
 RUN apt-get update && apt-get -y install  unzip \
                         xz-utils \
                         curl \

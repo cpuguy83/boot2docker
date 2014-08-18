@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-mkdir -P /Users/bgoff
-chown -R docker.docker /Users/bgoff
+mkdir -p /Users
+chown -R docker.docker /Users
 modprobe vboxsf
 
-mount -t vboxsf bgoff /Users/bgoff
+mount -t vboxsf Users /Users
