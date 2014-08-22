@@ -66,9 +66,6 @@ if [ -e /var/lib/boot2docker/bootlocal.sh ]; then
     /var/lib/boot2docker/bootlocal.sh > /var/log/bootlocal.log 2>&1 &
 fi
 
-# Create vboxsf folders
-/etc/rc.d/vboxsf
-
 # Execute automated_script
 # disabled - this script was written assuming bash, which we no longer have.
 #/etc/rc.d/automated_script.sh
